@@ -96,6 +96,7 @@ namespace CarInsuranceQuote.Controllers
                 //adding and saving new class object to database
                 db.Customers.Add(customer);
                 db.SaveChanges();
+                ViewBag.Message = customer;
 
                 //had to try and catch a validation error from the database
                 //had accidentally set DUI data type to varchar(3) ("yes" or "no")

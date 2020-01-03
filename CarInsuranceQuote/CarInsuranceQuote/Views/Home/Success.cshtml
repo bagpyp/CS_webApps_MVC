@@ -1,7 +1,9 @@
-﻿@using CarInsuranceQuote.ViewModels
-@model List<CustomerVm>
+﻿@model CarInsuranceQuote.Models.Customer
+@{ 
+    var estimate = ViewBag.Message.Estimate;
+}
 
 <h1>Success!</h1>
 <br />
 <h3>Your Official Rate will be emailed to you shortly,</h3>
-<h4>Estimated rate: </h4>
+<h4>Estimated rate: $@estimate </h4>
